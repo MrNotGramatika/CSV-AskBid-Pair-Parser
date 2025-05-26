@@ -1,6 +1,6 @@
 # CSV-AskBid-Pair-Parser
 
-## Example
+## Example Code
 ```C++
 int main() {
     const auto eurusd = CSV_Map(
@@ -26,3 +26,16 @@ int main() {
     std::cout << std::format("  BID price (low): {}\n", eurusd[timestamp].bid.low);
 }
  ```
+## Example Output
+```
+Time: [01.04.2025 00:01:00.000]
+  ASK price (open): 1.0819
+  ASK price (close): 1.08187
+  ASK price (high): 1.08191
+  ASK price (low): 1.08184
+
+  BID price (open): 1.08186
+  BID price (close): 1.08183
+  BID price (high): 1.08187
+  BID price (low): 1.08178
+```
